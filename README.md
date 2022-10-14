@@ -4,6 +4,8 @@
 
 可以设置任意大小的位数据，设置任意 0/1 值，并能高效查询跟设置。可以把位数据转成字符串存储或者网络传输，同时支持从字符串初始化。
 
+refer to: https://github.com/bcg/bitpack
+
 # use see test.lua
 ```lua
 local bitpack = require "bitpack"
