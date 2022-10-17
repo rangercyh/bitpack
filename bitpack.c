@@ -23,8 +23,8 @@ round8(unsigned long v) {
 /* increase the size of a bitpack object, allocating more memory if necessary */
 static int
 _bitpack_resize(bitpack_t bp, unsigned long new_size) {
-   unsigned long new_data_size = round8(new_size) / 8;
-   if (new_data_size > bp->data_size) {
+    unsigned long new_data_size = round8(new_size) / 8;
+    if (new_data_size > bp->data_size) {
         bp->data = realloc(bp->data, new_data_size);
         if (bp->data == NULL) {
             print("memory allocation failed\n");
@@ -32,9 +32,9 @@ _bitpack_resize(bitpack_t bp, unsigned long new_size) {
         }
         memset(bp->data + bp->data_size, 0, new_data_size - bp->data_size);
         bp->data_size = new_data_size;
-   }
-   bp->size = new_size;
-   return BITPACK_RV_SUCCESS;
+    }
+    bp->size = new_size;
+    return BITPACK_RV_SUCCESS;
 }
 
 bitpack_t
