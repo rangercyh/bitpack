@@ -21,9 +21,9 @@ typedef enum {
 
 struct _bitpack_t
 {
-    unsigned long  size;                    /** size of bitpack in bits */
-    unsigned long  data_size;               /** amount of allocated memory */
-    unsigned char *data;                    /** pointer to the acutal data */
+    unsigned long size;                    /** size of bitpack in bits */
+    unsigned long data_size;               /** amount of allocated memory */
+    unsigned char *data;                   /** pointer to the acutal data */
 };
 
 typedef struct _bitpack_t * bitpack_t;
